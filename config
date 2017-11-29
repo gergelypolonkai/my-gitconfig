@@ -1,0 +1,80 @@
+[alias]
+	ba = branch -vv
+	baa = branch -vva
+	fixup = commit --amend -CHEAD\n
+	git = !exec git
+	glog = log --graph --all --decorate --oneline
+	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	lol = log --oneline
+	llog = log @{u}..
+	llol = log --oneline @{u}..
+	sha = rev-parse HEAD
+	show-tracked-ignored = !\ncd \"${GIT_PREFIX}\" &&\nuntracked_list=$(git rev-parse --git-dir)/ignored-untracked.txt &&\ngit ls-files -o -i --exclude-standard >\"${untracked_list}\" &&\nGIT_INDEX_FILE=\"\" git ls-files -o -i --exclude-standard | grep -Fvxf \"${untracked_list}\" &&\nrm -rf \"${untracked_list}\"
+	verify = diff ORIG_HEAD HEAD
+[branch]
+	autosetuprebase = always
+[color]
+	ui = auto
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[color "branch"]
+	current = blue reverse
+	local = blue
+[color "status"]
+	added = green
+	changed = blue
+	untracked = cyan
+	unmerged = red
+	branch = blue
+	localBranch = blue
+	remoteBranch = red
+[core]
+	excludesfile = ~/.config/git/gitignore
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[diff]
+	mnemonicprefix = true
+	tool = meld
+[diff "po"]
+	textconv = msgcat --no-location --no-wrap --sort-output
+[giggle]
+	main-window-maximized = true
+	main-window-geometry = 321x74+1+59
+	main-window-view = HistoryView
+	history-view-vpane-position = 636
+	file-view-hpane-position = 230
+	file-view-vpane-position = 855
+[github]
+	user = gergelypolonkai
+[gui]
+	spellingdictionary = none
+	recentrepo = /home/polesz/Projektek/c/wMUD/current-github
+	recentrepo = /home/polesz/Projektek/python/gergelypolonkai_django
+	recentrepo = /home/polesz/Projektek/vala/train-game
+	recentrepo = /home/polesz/jhbuild/checkout/astrognome
+	recentrepo = /home/polesz/Projektek/c/swe-glib
+	recentrepo = /home/polesz/jhbuild/checkout/gnome-gitlab
+	recentrepo = /home/polesz/Projektek/c/astrognome
+[guitool "Meld"]
+	cmd = meld $FILENAME
+	noconsole = yes
+	needsfile = yes
+[init]
+	templatedir = ~/.config/git
+[magit]
+	hideCampaign = true
+[merge]
+	tool = meld
+[mergetool]
+	keepBackup = false
+[rerere]
+	enabled = true
+[pull]
+	rebase = true
+[push]
+	default = current
+[user]
+	name = Gergely Polonkai
+	email = gergely@polonkai.eu
+	signingkey = B0740C4C
