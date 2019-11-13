@@ -17,6 +17,8 @@
 	verify = diff ORIG_HEAD HEAD
 	serve = "daemon --verbose --export-all --base-path=. --reuseaddr $@ ."
 	pass = !exec pass git
+[commit]
+	gpgsign = true
 [branch]
 	autosetuprebase = always
 [color]
@@ -84,3 +86,5 @@
 	user = gergelypolonkai
 [github]
 	user = gergelypolonkai
+[gpg]
+	command = gpg --no-autostart
