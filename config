@@ -5,7 +5,7 @@
 [alias]
 	ba = branch -vv
 	baa = branch -vva
-	fixup = commit --amend -CHEAD\n
+	fixup = commit --amend -CHEAD
 	git = !exec git
 	glog = log --graph --all --decorate --oneline
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
