@@ -54,8 +54,6 @@
 	history-view-vpane-position = 636
 	file-view-hpane-position = 230
 	file-view-vpane-position = 855
-[github]
-	user = gergelypolonkai
 [gui]
 	spellingdictionary = none
 	recentrepo = /home/polesz/Projektek/c/wMUD/current-github
