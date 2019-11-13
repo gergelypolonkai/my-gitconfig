@@ -1,3 +1,7 @@
+[user]
+	name = Gergely Polonkai
+	email = gergely@polonkai.eu
+	signingkey = F42BBA58B0740C4C
 [alias]
 	ba = branch -vv
 	baa = branch -vva
@@ -74,7 +78,7 @@
 	rebase = true
 [push]
 	default = current
-[user]
-	name = Gergely Polonkai
-	email = gergely@polonkai.eu
-	signingkey = B0740C4C
+[gitlab]
+	user = gergelypolonkai
+[github]
+	user = gergelypolonkai
