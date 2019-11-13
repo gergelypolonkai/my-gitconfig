@@ -82,6 +82,8 @@
 	rebase = true
 [push]
 	default = current
+[credential]
+	helper = /usr/libexec/git-core/git-credential-libsecret
 [gitlab]
 	user = gergelypolonkai
 [github]
