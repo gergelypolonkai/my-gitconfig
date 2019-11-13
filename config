@@ -12,6 +12,7 @@
 	lol = log --oneline
 	llog = log @{u}..
 	llol = log --oneline @{u}..
+	reviewers = !/home/polesz/.local/git-reviewers/git_reviewers/reviewers.py
 	sha = rev-parse HEAD
 	show-tracked-ignored = !\ncd \"${GIT_PREFIX}\" &&\nuntracked_list=$(git rev-parse --git-dir)/ignored-untracked.txt &&\ngit ls-files -o -i --exclude-standard >\"${untracked_list}\" &&\nGIT_INDEX_FILE=\"\" git ls-files -o -i --exclude-standard | grep -Fvxf \"${untracked_list}\" &&\nrm -rf \"${untracked_list}\"
 	verify = diff ORIG_HEAD HEAD
